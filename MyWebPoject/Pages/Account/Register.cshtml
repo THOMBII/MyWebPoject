@@ -1,0 +1,32 @@
+﻿@page
+@model MyWebPoject.Pages.Account.RegisterModel
+@{
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<div class="container-fluid m-0">
+    <div class="Register-Bar">
+        <form method="post">
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <div class="form-grou">
+                <label asp-for="Input.Email"></label>
+                <input type="text" asp-for="Input.Email" class="form-control m-0" />
+                <span asp-validation-for="Input.Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Input.Password"></label>
+                <input type="password" asp-for="Input.Password" class="form-control m-0" />
+                <span asp-validation-for="Input.Password" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Input.ConfirmPassword"></label>
+                <input type="password" asp-for="Input.ConfirmPassword" class="form-control m-0" />
+                <span asp-validation-for="Input.ConfirmPassword" class="text-dange p-0"></span>
+            </div>
+            <div class="Btn-center text-center">
+                <button type="submit" class="btn btn-primary mt-3">Register</button>
+            </div>
+        </form>
+    </div>
+</div>

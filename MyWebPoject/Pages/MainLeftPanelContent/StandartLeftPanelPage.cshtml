@@ -1,0 +1,14 @@
+﻿@page "{Tema}/{id}"
+@model MyWebPoject.Pages.MainLeftPanelContent.StandartLeftPanelPageModel
+@{
+}
+
+<div class="container-fluid">
+    <div class="content-l">
+         @await Html.PartialAsync("_LeftCodeSidebar")
+    </div>
+
+    <div class="contnt-Center-SideBar">
+        @await Html.PartialAsync(Model.UrlString)
+    </div>
+</div>

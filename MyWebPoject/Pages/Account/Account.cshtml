@@ -1,0 +1,60 @@
+﻿@page
+@model MyWebPoject.Pages.Account.AccountModel
+@{
+    ViewData["Title"] = "Account";
+}
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Account</title>
+</head>
+<body>
+    <div class="container-fluid modal-fullscreen RegBody">
+        
+        <div class="ImgRegister">
+            <img src="~/images/CShIMG.png" height="295" width="305" />
+        </div>
+
+        <div class="container RegPanelArea">
+
+            <div class="RegPanelDecoration-Top ms-auto"></div>
+            <div class="RegPanelDecoration-Left ms-auto"></div>
+
+            <div class="RegisterPanel">
+                @Model.Msg
+                <div class="RegisterPanelTop  mb-0 ">
+                    <h3 class="PadText">LOGIN</h3>
+                </div>
+
+                <form method="post" asp-page="/Account/Account">
+                    <table class="RegisterPanelMain">
+                        <tr>    
+                            <td class=""><input type="text" asp-for="@Model.Input.Email" placeholder="Email" /></td>
+                        </tr>
+                        <tr>
+                            <td class=""><input type="password" asp-for="@Model.Input.Password" placeholder="Password" /></td>
+                        </tr>
+                        <tr>
+                            <td class="checkbox" asp-for="Input.RememberMe">
+                                <input asp-for="Input.RememberMe" />
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>
+                                <input class="RegBottom" type="submit" value="Login" />
+                                <input class="RegBottom PadRegisterBottom" type="submit" value="Register" asp-page="/Account/Register" />
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+
+            <div class="RegPanelDecoration-Left"></div>
+            <div class="RegPanelDecoration-Top"></div>
+
+        </div>
+    </div>
+</body>
+</html>

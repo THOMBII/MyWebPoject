@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'OpenSans-Med';
+    src: url(~/AllContent/AllFonts/fonts/Open_Sans/static/OpenSans-Medium.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+.MainText{
+	padding-left: 3vh;
+	padding-top: 4vh;
+	padding-bottom: 6vh;
+	margin-right: 23vh;
+	font-family: OpenSans-Med;
+}
+
+.TextCenter{
+	font-weight: 300;
+	color: #333232;
+}
+
+.TitleContent{
+	font-weight: normal;
+	margin-bottom: 15vh;
+}
+
+.SubjectTextCenter{
+	margin-bottom: 5vh;
+	margin-top: 5vh;
+}

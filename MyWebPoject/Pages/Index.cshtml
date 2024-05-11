@@ -1,0 +1,66 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+
+
+<div class="container-fluid">
+
+    <div class="content-s">
+        @await Html.PartialAsync("_LeftCodeSidebar")
+    </div>
+
+    <div class="content">
+        <div class="MainText">
+            <h1 class="display-4 TextColor">Welcome to my WebSite !</h1>
+            <div class="pt-3 TextMainPage">
+                <h4>Добро пожаловать на наш сайт, посвященный изучению Razor Pages! Здесь вы найдете исчерпывающую информацию о Razor Pages, начиная с основ и заканчивая продвинутыми техниками. Мы стремимся сделать ваше обучение легким и приятным, предоставляя доступ к актуальным учебным материалам, интерактивным примерам и полезным ресурсам. Присоединяйтесь к нам в этом увлекательном путешествии, и мы поможем вам стать экспертом в области Razor Pages!</h4>
+            </div>
+            <div class="pt-5">
+                <p><a href="https://docs.microsoft.com/aspnet/core">Для ознакомления</a>.</p>
+            </div>
+            <div class="row text-center">
+                <div class="col">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ContentRigttBar">
+        <div class="text-center pt-4 pb-3 BootomLineLeftPanel">
+            <a href="https://www.instagram.com">
+                <img src="~/images/Inst.png" width="40" height="38" alt="" />
+            </a>
+            <a href="https://www.google.ru">
+                <img src="~/images/G+.png" width="40" height="38" alt="" />
+            </a>
+            <a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2F%3Flocale%3Dru_RU">
+                <img src="~/images/Face.png" width="40" height="38" alt="" />
+            </a>
+            <a href="https://twitter.com/?lang=ru">
+                <img src="~/images/Twit.png" width="40" height="38" alt="" />
+            </a>
+            <a href="https://vk.com/id491810005">
+                <img src="~/images/VK.png" width="40" height="38" alt="" />
+            </a>
+        </div>
+
+        <div class="newsBar">
+            <h2 class="text-center TextColor">On this Page</h2>
+            <div class="pt-4 ps-5">
+                <p><a asp-page="/MainLeftPanelContent/StandartLeftPanelPage" asp-route-Tema="Tema1" asp-route-id="Encapsulation">Обновление: 1 глава - Инкапсуляция ! </a>.</p>
+                <p><a asp-page="/MainLeftPanelContent/StandartLeftPanelPage" asp-route-Tema="Tema1" asp-route-id="Encapsulation">Обновление: 2 глава - Наследование ! </a>.</p>
+                <p><a asp-page="/MainLeftPanelContent/StandartLeftPanelPage" asp-route-Tema="Tema1" asp-route-id="Encapsulation">Обновление: 3 глава - Полиморфизм ! </a>.</p>
+                <p><a asp-page="/Account/Account"> Добавлена возможность регистрации !</a>.</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+

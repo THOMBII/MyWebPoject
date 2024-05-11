@@ -1,0 +1,54 @@
+<head>
+	<link rel="stylesheet" type="text/css" href="~/AllContent/Tema1/inheritance/inheritance.css" asp-append-version="true">
+
+</head>
+
+<body>
+	<div class="MainText">
+		<h1 class="TitleContent">Наследование </h1>
+
+		<div class="MarginTopTextCenter">
+			<h4 class="TextCenter">Наследование – является одним из ключевых столпом ООП . Благодаря наследованию один класс может реализовать логику другого класса.</h4>
+
+			<h4 class="TextCenter">По умолчанию все классы наследуются от базового класса Object, даже если мы явным образом не устанавливаем наследование.</h4>
+
+			<h4 class="TextCenter">При создании производного класса надо учитывать тип доступа к базовому и производному классам , у них должен быть один и тот же . В производном классе благодаря команде base можно обратиться к параметрам базового класса.</h4>
+
+			<h4 class="TextCenter">Пример</h4>
+
+			<img src="~/AllContent/Tema1/inheritance/image/inher1.png">
+
+			<h4 class="TextCenter">Метод main</h4>
+
+			<img src="~/AllContent/Tema1/inheritance/image/inher2.png">
+
+			<h4 class="TextCenter">Результат</h4>
+
+			<img src="~/AllContent/Tema1/inheritance/image/inher3.png">
+
+			<h4 class="TextCenter">В данном несложном примере мы создали два класса: MyClass1 - родительский класс , содержащий некую логику и класс MyClass2 - наследник , не имеющий собственной лошики и использующий логику родительского класса.</h4>
+
+			<h4 class="TextCenter">Запомните - В C# не поддерживается множественное наследование!</h4>
+		</div>
+
+		<div>
+			<h3 class="SubjectTextCenter">Ключевое слово base:</h3>
+
+			<h4 class="TextCenter">Конструкторы не передаются по умолчанию. И если в базовом классе не определён конструктор по умолчанию без параметров, а только конструкторы с параметрами, то в производном классе мы обязательно должны вызвать один из этих конструкторов через ключевое слово base</h4>
+
+			<h4 class="TextCenter">Пример</h4>
+
+			<img src="~/AllContent/Tema1/inheritance/image/inher4.png">
+
+			<h4 class="TextCenter">Метод main</h4>
+
+			<img src="~/AllContent/Tema1/inheritance/image/inher5.png">
+
+			<h4 class="TextCenter">Результат</h4>
+
+			<img src="~/AllContent/Tema1/inheritance/image/inher6.png">
+
+			<h4 class="TextCenter">В этом примере в наследуемом классе мы обращаемся к конструктору базового класса</h4>
+		</div>		
+	</div>
+</body>

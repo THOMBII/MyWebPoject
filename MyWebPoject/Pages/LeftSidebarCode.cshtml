@@ -1,0 +1,51 @@
+﻿@page
+@model LeftSidebarCodeModel
+@{
+}
+
+<div class="SidePanel">
+    <ul class="list-unstyled mb-0 pt-md-0">
+        <li class="mb-1">
+
+            <button class="btn btn-outline-secondary custom-btn BootomLineLeftPanel" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent0" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span>Вкладка №1</span>
+            </button>
+
+            <ul class="collapse nobullet" id="navbarToggleExternalContent0">
+                <li><a class="btn" asp-page="/MainLeftPanelContent/StandartLeftPanelPage" asp-route-id="1">Инкапсуляция </a></li>
+                <li><a class="btn" asp-page="/MainLeftPanelContent/StandartLeftPanelPage" asp-route-id="2">Наследование</a></li>
+                <li><a class="btn" asp-page="/MainLeftPanelContent/StandartLeftPanelPage" asp-route-id="3">Полиморфизм</a></li>
+            </ul>
+
+        </li>
+
+        <li class="mb-1">
+
+            <button class="btn btn-outline-secondary custom-btn BootomLineLeftPanel" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent1" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span>Вкладка №2</span>
+            </button>
+
+            <ul class="collapse nobullet text-sm-start" id="navbarToggleExternalContent1">
+                <li><a class="btn" href="#">Текст 1</a></li>
+                <li><a class="btn" href="#">Текст 2</a></li>
+                <li><a class="btn" href="#">Текст 3</a></li>
+            </ul>
+
+        </li>
+
+        <li class="mb-1">
+
+            <button class="btn btn-outline-secondary custom-btn BootomLineLeftPanel" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent2" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span>Вкладка №3</span>
+            </button>
+
+            <ul class="collapse nobullet text-sm-start" id="navbarToggleExternalContent2">
+                <li><a class="btn" href="#">Текст 1</a></li>
+                <li><a class="btn" href="#">Текст 2</a></li>
+                <li><a class="btn" href="#">Текст 3</a></li>
+            </ul>
+
+        </li>
+
+    </ul>
+</div>

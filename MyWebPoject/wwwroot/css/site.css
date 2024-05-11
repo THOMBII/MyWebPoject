@@ -1,0 +1,266 @@
+﻿/*Основные стили*/
+/*---------------------------------------------------------*/
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    padding-top: 56px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+
+/*Разделители и прочее*/
+/*---------------------------------------------------------*/
+.container-fluid {
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+}
+
+.content {
+    width: 1060px; /* указываем, что контент должен заполнить оставшееся пространство */
+}
+
+.content-s {
+    height: 88vh;
+}
+
+
+.ContentRigttBar {
+    flex: 1;
+}
+
+a {
+    text-decoration: none;
+    color: #49badd;
+}
+
+
+/*Подсветка ссылки при наведении на неё*/
+a:hover {
+    color: #8269b8;
+}
+
+.nobullet {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+/*Все линии*/
+/*---------------------------------------------------------*/
+.VerticalLine {
+    border-right: 1px solid black;
+}
+
+.HorizontLine {
+    border-bottom: 1px solid black;
+    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.80);
+}
+
+
+/*Верхняя панель навигации*/
+/*---------------------------------------------------------*/
+.MenuBg {
+    background-color: #3b2e58;
+    color: aqua;
+}
+
+.AccauntImg {
+    padding-left: 87%;
+    padding-top: 6px;
+}
+
+
+/*Боковая панель навигации*/
+/*---------------------------------------------------------*/
+.SidePanel {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 150px; /* Set the width of the sidebar */
+    background-color: #f6f6f6; /* Black */
+    padding-top: 5px;
+}
+
+.custom-btn {
+    background-color: #f6f6f6;
+    color: black;
+    border: none;
+    width: 150px;
+}
+
+.custom-btn:hover {
+    background-color: #f6f6f6;
+    color: #8269b8;
+}
+
+.BootomLineLeftPanel {
+    border-bottom: 2px solid #ddd9e6;
+}
+
+
+/*Центральный текст(Приветствие)*/
+/*---------------------------------------------------------*/
+.MainText {
+    padding-left: 12vh;
+    padding-top: 5vh;
+}
+
+.TextColor {
+    color: #004867;
+}
+
+.TextMainPage {
+    color: #37373c;
+    font-family: 'American', 'Typewriter', serif;
+}
+
+
+/*Новостная панель справа */
+/*---------------------------------------------------------*/
+.newsBar {
+    margin-top: 10vh;
+    margin-left: 15px;
+    height: 50vh;
+    width: 300px;
+    border-bottom: 1px solid #f4f5f5;
+    border-top: 1px solid #f4f5f5;
+    border-left: 1px solid #f4f5f5;
+    border-right: 1px solid #f4f5f5;
+    -webkit-box-shadow: -2px -1px 11px -3px rgba(34, 60, 80, 0.11);
+    -moz-box-shadow: -2px -1px 11px -3px rgba(34, 60, 80, 0.11);
+    box-shadow: -2px -1px 11px -3px rgba(34, 60, 80, 0.11);
+}
+
+
+/*Стили страницы регистрации*/
+/*---------------------------------------------------------*/
+.RegBody {
+    height: 91vh;
+    width: 100%;
+    background: rgb(247,248,253);
+    background: linear-gradient(90deg, rgba(247,248,253,1) 0%, rgba(206,209,240,1) 100%);
+}
+
+.ImgRegister {
+    width: 400px;
+    margin:auto;
+}
+
+.RegisterPanelMain {
+    height: 225px;
+    width: 275px;
+    background: #f8f8fc;
+}
+
+.RegisterPanelTop {
+    height: 60px;
+    width: 275px;
+    color: #f8f8fc;
+    background: #73578e;
+}
+
+.RegisterPanel {
+    width: 275px;
+    /*background: #73578e;*/
+    -webkit-box-shadow: 2px 2px 8px 5px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 2px 2px 8px 5px rgba(34, 60, 80, 0.2);
+    box-shadow: 2px 2px 8px 5px rgba(34, 60, 80, 0.2);
+    transform: translate(0%, 0vh);
+    padding: 0px;
+    margin: auto;   
+}
+
+.RegPanelArea {
+    margin: auto;
+    width:360px;
+    height: 390px;
+}
+
+.PadText {
+    padding-top: 5%;
+    padding-left: 5%;
+}
+
+.PadRegbar{
+    padding-left: 0%;
+}
+
+.RegPanelDecoration-Left {
+    height: 50px;
+    border-left: 2px solid #8e73b4;
+    color: #8e73b4;
+    width: 0px;
+}
+
+.RegPanelDecoration-Top {
+    width: 50px;
+    border-top: 2px solid #8e73b4;
+    color: #8e73b4;
+}
+
+input {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background: #f8f8fc;
+    margin-left: 44px;
+    
+}
+
+/* Change the white to any color */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px #f8f8fc inset !important;
+}
+
+.RegBottom {
+    color: black;
+    margin-left: 5vh;
+}
+
+
+.RegBottom:hover {
+    color: #8269b8;
+}
+
+.PadRegisterBottom{
+    margin-left: 80px;
+}
+
+
+/*Стили регистрации*/
+
+.Register-Bar{
+    padding-left: 90vh;
+    padding-top: 20vh;
+}
+
+/*Стили Users Page*/
+.Users{
+    margin-left: 10vh;
+    width: 150vh;
+}
